@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercixe Formation CSS avancé</title>
+        <link rel="stylesheet" href="style-info.css" />
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content>
+    </head>
+    <body>
+        <!--  
+            Mettez en forme le document suivant les directive donné en commentaire dans le code ci desous
+            
+            Format des instructions:
+            n°) indique à quel moment appliqué le style
+            n°) ??: indique la balise sur laquelle appliqué le style 
+
+            Il est de votre ressort d'utilisé les outils présenté pendant la formation correctement
+        -->
+        <!--
+            1) mettez le fond du menu en vert #c4ebc4
+            2) mettez le fond du contenu principal en blanc 
+            3) mettez le fond du pied de page dans la meme couleur de le menu
+            4) la police doit etre de l'Arial
+        -->
+        <header class="header"> 
+            <!-- 
+                1) h1: à mettre en gras police arial à gauche de l'écran
+                2) nav: aligné le menu au titre et mettez le à droite avec un espace de "      " 
+                    (6 caractère d'espacement) entre les différents menu
+                3) a: retirer le style sur les référence et mettez les en noir
+            -->
+            <h1>CSLabs Formation CSS Avancée</h1>
+            <nav>
+                <a href="./home.html">Home</a>
+                <a href="./inscription.html">Incription</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./info.html">Info</a>
+            </nav>
+        </header>
+        <main>
+            <!-- 
+                1) div: pour chaque container mettez une ligne de séparation en dessous
+                2) div: pour chaque image mettez en une à gauche et la suivante à droite 
+                
+             -->
+            <h2>Information générales</h2>
+            <div class="container place">
+                <img src="../images/location.svg"/>
+                <h3>Où a lieu la formation ?</h3>
+                <p>La formation à lieu Rue Grandgagnage n°XX, 5000 Namur</p>
+                <p>Il s'agit de la faculté d'informatique dans le local i21 (deuxième étage)</p> 
+            </div>
+            <div class="container moment">
+                <img src="../images/info.svg"
+                <h3>Quand a lieu la formation ?</h3>
+                <p>La formation à lieu à 18h30 le lundi 31 octobre 2022</p>
+            </div>
+            <div class="container what">
+                <img src="../images/commodites.svg" />
+                <h3>Qu'allons-nous faire à cette formation ?</h3>
+                <ol>
+                    <li>Rappel HTML et CSS
+                        <ol>
+                            <li>Rappel théorique</li>
+                            <li>Démonstration</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Variable global
+                        <ol>
+                            <li>:root</li>
+                        </ol>
+                    </li>
+                    <li>Display
+                        <ol>
+                            <li>Inline</li>
+                            <li>Block</li>
+                            <li>inline-block</li>
+                            <li>none</li>
+                        </ol>
+                    </li>
+                    <li>flex
+                        <ol>
+                            <li>Colones</li>
+                            <li>Lignes</li>
+                            <li>Direction principale</li>
+                        </ol>
+                    </li>
+                    <li>Grif
+                        <ol>
+                            <li>Template</li>
+                        </ol>
+                    </li>
+                    <li>images
+                        <ol>
+                            <li>Intégration responsive</li>
+                        </ol>
+                    </li>
+                    <li>Unité de mesure
+                        <ol>
+                            <li>px</li>
+                            <li>em & rem</li>
+                            <li>vw & vw</li>
+                        </ol>
+                    </li>
+                    <li>Réactivité et Bonne pratique
+                        <ol>
+                            <li>Calcul avec les rem</li>
+                            <li>positionnement</li>
+                            <li>inspecteur et changement de suport de manière virtuelle</li>
+                        </ol>
+                    </li>
+                    <li>Annimations</li>
+                    <li>Feed back et exercise</li>
+                </ol>
+            </div>
+        </main>
+        <footer>
+            <!-- 
+                1) Mette au centre de la page
+                2) créer un séparateur entre les différents éléments
+            -->
+            <p>
+                <a href="./rgpd.html">RGPD</a>
+                <p>5 Rue de la réussite, 5000 Namur</p>
+            </p>
+        </footer>
+    </body>
+</html>

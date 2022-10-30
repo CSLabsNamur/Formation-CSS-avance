@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercixe Formation CSS avancé</title>
+        <link rel="stylesheet" href="style-contact.css" />
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content>
+    </head>
+    <body>
+        <!--  
+            Mettez en forme le document suivant les directives données en commentaire dans le code ci-desous
+            
+            Format des instructions:
+            n°) indique à quel moment appliqué le style
+            n°) ??: indique la balise sur laquelle appliquer le style 
+
+            Il est de votre ressort d'utiliser les outils présentés pendant la formation correctement
+        -->
+        <!--
+            1) mettez le fond du menu en vert #c4ebc4
+            2) mettez le fond du contenu principal en blanc 
+            3) mettez le fond du pied de page dans la meme couleur de le menu
+            4) la police doit etre de l'Arial
+        -->
+        <header class="header"> 
+            <!-- 
+                1) h1: à mettre en gras police arial à gauche de l'écran
+                2) nav: alignez le menu au titre et mettez le à droite avec un espace de "      " 
+                    (6 caractère d'espacement) entre les différents éléments de la barre de navigation
+                3) a: retirez le style sur les différents éléments et mettez les en noir, 
+                    quand la souris passe dessus ils doivent clignoter en rouge 
+            -->
+            <h1>CSLabs Formation CSS Avancée</h1>
+            <nav>
+                <a href="./home.html">Home</a>
+                <a href="./inscription.html">Incription</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./info.html">Info</a>
+            </nav>
+        </header>
+        <main>
+            <!-- 
+                1) div: quand la class est "left" mettez l'image à gauche et le texte à droite
+                        quand la class est "right" mettez l'image à droite et le texte à gauche
+                2) div: sur les div ayant une class "container" mettez le fond en vert #89f88b90 
+                        quand l'image est à gauche et en white quand l'image est à droite
+                3) img: lorsque l'écran rétréci (sur un appareil mobile par exemple) 
+                        les images doivent passer en desous du texte
+                4) a: retirer le style par défaut des lien et appliqué celui d'un texte normal, 
+                        quand la souris passe dessus faite passer le texte en vert
+              -->
+            <img src="../images/contact.svg" />
+            <h2>Contact us</h2>
+            <div class="container left" id="yannis">
+                <img src="../images/yannis_contact.jpg" />
+                <h3>Yannis Van Achter</h3>
+                <p>Profession: Training manager au <a href="https://www.cslabs.be/staff/" target="_blank">CSLabs</a></p>
+                <p>Etuiant en science informatique à l'UNamur depuis septembre 2021</p>
+                <p><a href="">Profil LinkedIn</a></p>
+            </div>
+            <div class="container right" id="pierre">
+                <img src="" />
+                <h3>Pierre Poitier</h3>
+                <p>Profession: chercheur en faculté d'informatique à l'UNamur depuis septembre 2022</p>
+                <p>Historique professionnel et étudiant:
+                    <ol>
+                        <li>Master en  data science obtenu à l'UNamur en 2022</li>
+                        <li>Training manager au <a href="https://www.cslabs.be/" target="_blank">CSLabs</a> l'annnée 2020-2021</li>
+                        <li>Bachelier en science informatique obtenu à l'UNamur en 2020</li>
+                    </ol>
+                </p>
+                <p><a href="">Profil LinkedIn</a></p>
+            </div>
+        </main>
+        <footer>
+            <!-- 
+                1) Mettez au centre de la page
+                2) créez un séparateur entre les différents éléments
+            -->
+            <p>
+                <a href="./rgpd.html">RGPD</a>
+                <p class="adress">5 Rue de la réussite, 5000 Namur</p>
+            </p>
+        </footer>
+    </body>
+</html>
+

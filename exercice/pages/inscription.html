@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercixe Formation CSS avancé</title>
+        <link rel="stylesheet" href="style-inscription.css" />
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content>
+    </head>
+    <body>
+        <!--  
+            Mettez en forme le document suivant les directive donné en commentaire dans le code ci desous
+            
+            Format des instructions:
+            n°) indique à quel moment appliqué le style
+            n°) ??: indique la balise sur laquelle appliqué le style 
+
+            Il est de votre ressort d'utilisé les outils présenté pendant la formation correctement
+        -->
+        <!--
+            1) mettez le fond du menu en vert #c4ebc4
+            2) mettez le fond du contenu principal en blanc 
+            3) mettez le fond du pied de page dans la meme couleur de le menu
+            4) la police doit etre de l'Arial
+        -->
+        <header class="header"> 
+            <!-- 
+                1) h1: à mettre en gras police arial à gauche de l'écran
+                2) nav: aligné le menu au titre et mettez le à droite avec un espace de "      " 
+                    (6 caractère d'espacement) entre les différents menu
+                3) a: retirer le style sur les référence et mettez les en noir
+            -->
+            <h1>CSLabs Formation CSS Avancée</h1>
+            <nav>
+                <a href="./home.html">Home</a>
+                <a href="./inscription.html">Incription</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./info.html">Info</a>
+            </nav>
+        </header>
+        <main>
+            <!--
+                1) li: retirez les bullets devant chaque ligne 
+                2) input: transfomez en un cadre joli avec les bords arrondi
+                3) 
+            -->
+            <h2>Inscription</h2>
+            <form>
+                <!--TODO Ajouter une balise lier à l'input pour y insérer la requete-->
+                <ul>
+                    <li><input id="lastname" type="text" placeholder="Nom" /></li>
+                    <li><input id="firstname" type="text" placeholder="Prénom" /></li>
+                    <li><input id="email" type="mail" placeholder="Entrez votre email" /></li>
+                    <li><input id="type-follow-training" type="checkbox" placeholder="Souscrire à toutes les formations"/></li>
+                    <li><button type="submit">S'inscire</button></li> 
+                </ul>
+            </form>
+        </main>
+        <footer>
+            <!-- 
+                1) Mette au centre de la page
+                2) créer un séparateur entre les différents éléments
+            -->
+            <p>
+                <a href="./rgpd.html">RGPD</a>
+                <p>5 Rue de la réussite, 5000 Namur</p>
+            </p>
+        </footer>
+    </body>
+</html>
