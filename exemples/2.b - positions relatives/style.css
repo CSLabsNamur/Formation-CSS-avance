@@ -1,0 +1,59 @@
+
+/* RELATIVE POSITIONS */
+
+/* We set the element '#a' as a positioned element. */
+
+#a {
+    position: relative; /* This command does nothing but indicate its position to its children. */
+
+    width: 500px;
+    height: 500px;
+    background-color: darkcyan;
+}
+
+#b {
+    /* This command change the position of the element with absolute values (top, bottom, left, right). */
+    /* It uses the first parent that tells its position as a reference. In this case: #a */
+    position: absolute; /* This command also indicate a position to its children. #b becomes the reference of #c !!! */
+
+    /* Stick to 20px from the bottom of its reference and 20px from the left. */
+    /* Positive values go inside the reference element, and negative values go outside. */
+    bottom: 20px;
+    left: 20px;
+
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+}
+
+#c {
+    /* It uses the first parent that tells its position as a reference. In this case: #b */
+    position: absolute;
+    
+    top: 10px;
+    right: 10px;
+
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+}
+
+
+/* FIXED POSITION */
+
+body {
+    height: 8000px;
+}
+
+#f {
+    position: fixed; /* Fixed position ALWAYS use the body of the page as a reference. */
+    bottom: 50px;
+    right: 50px;
+
+    width: 100px;
+    height: 100px;
+    background-color: green;
+
+    border-radius: 50%;
+}
+

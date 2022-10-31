@@ -1,0 +1,7 @@
+Basic Black 	: #1A1A1A
+Basic Gray 		: #696969
+Blue Link 		: #69A4DA
+Rose Cat 		: #A30276
+Violet Cat 		: #4D4798
+Purple Cat 		: #653384
+Green Cat 		: #2E763E

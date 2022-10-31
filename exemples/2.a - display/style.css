@@ -1,0 +1,17 @@
+
+/* Default 'display mode' of span is 'inline'. */
+/* However, we want to manipulate blocks like a 'div' element. We should change the display mode to 'block' to do so. */
+
+span {
+    background-color: green;
+
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 700px;
+}
+
+/* As we change the value of 'display' property, the page use this new 'display mode' to indicate what behavior to apply from the commands: width, height, margin, etc. */
+
+span.example {
+    display: block;
+}

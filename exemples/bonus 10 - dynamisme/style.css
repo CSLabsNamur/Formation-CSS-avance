@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --bg-main: #e0e0e0;
+    --c-main: black;
+
+    --menu-bg: #a0a0a0;
+    --menu-rotation: 0;
+    --sub-menu-bg: red;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background-color: var(--bg-main);
+}
+
+.radia-menu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 10rem;
+    height: 10rem;
+
+    background-color: var(--menu-bg);
+    border-radius: 50%;
+}
+
+.radia-menu > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 5rem;
+    height: 5rem;
+
+    background-color: var(--sub-menu-bg);
+    border-radius: 50%;
+
+    transform:
+        translate(50%, 50%)
+        rotate(calc(var(--menu-rotation) * 72deg - 18deg))
+        translate(12rem, 0);
+}
+
+.radia-menu > div:hover {
+    --sub-menu-bg: green;
+}

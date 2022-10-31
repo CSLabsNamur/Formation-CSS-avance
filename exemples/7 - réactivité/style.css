@@ -1,0 +1,78 @@
+/* reset the default style that is applied by the browser !!! */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    /* IMPORTANT */
+    /* Default font-size is 16px */
+    /* 62.5% of 16px is 10px */
+    /* This line set 1REM to 10px */
+    /* ONLY USE REM FOR THE ENTIRE PAGE */
+    /* THEN WE CAN RESIZE ALL THE PAGE BY CHANGING THIS VALUE FOR OTHER DEVICES (Mobile, 4K, etc.) */
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem; /* Set default font size to 16px, like default behavior. */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh; /* Prevent the pages that are smaller than the screen ! */
+}
+
+.container {
+    min-width: 100rem; /* 100rem = 1000px */
+    max-width: 160rem;
+    min-height: calc(100vh - 4rem); /* You can mix units with calc function. It computes the size on the fly ! */
+
+    margin: auto;
+    padding: 2rem 4rem; /* vertical padding, horizontal padding */
+
+    background-color: #f0f0f0;
+    box-shadow: 0 0 2rem .1rem rgba(0,0,0,0.5); /* Search for shadow generator on the web and generate this property. */
+}
+
+.topic {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    min-height: 30rem;
+
+    background-color: white;
+    border-radius: 1rem;
+
+    /* Reactive font-size (resize to see). */
+    /* font-size = max( 16px, min(2% of the screen width, 24px) ) */
+    /* Compute the font-size according ot the screen size ! */
+    font-size: clamp(1.6rem, 2vw, 2.4rem);
+    /* Clamp can be used with every numerical properties (similar to calc) */
+}
+
+.topic > p {
+    padding: 2rem;
+}
+
+.topic > img {
+    display: block;
+    object-fit: cover;
+    object-position: bottom;
+
+    min-width: 40%;
+    max-height: 30rem;
+}
+
+/* Only change those properties on devices with a maximum screen of 1200pw width. */
+/* Apply style only on tablets or mobiles */
+@media (max-width: 1200px) {
+    .container {
+        min-width: 30rem;
+    }
+
+    .topic {
+        display: flex; /* Change your layout according to the size of the device screen. VERY POWERFUL !!! */
+        flex-direction: column;
+    }
+}
+
+/* There is a lot of media queries. You conditionate your style according to the media that is displaying the page: smartphone, printer, reader, etc. */

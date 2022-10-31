@@ -1,0 +1,59 @@
+
+:root {
+    --base-color: black;
+    --text-color: #f08080;
+    --menu-text-color: white;
+
+    --navbar-align: center;
+    --footer-height: 150px;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--base-color);
+    color: var(--text-color);
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+}
+
+
+p {
+    margin-bottom: 50px;
+    padding: 10px;
+    border-left: 2px solid var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+}
+
+
+header {
+    --footer-height: 80px;
+
+    width: 100%;
+    height: var(--footer-height);
+    line-height: var(--footer-height);
+
+    background-color: var(--text-color);
+    color: var(--menu-text-color);
+
+    text-align: center;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: var(--footer-height);
+    line-height: var(--footer-height);
+
+    background-color: var(--text-color);
+    color: var(--menu-text-color);
+
+    text-align: center;
+}

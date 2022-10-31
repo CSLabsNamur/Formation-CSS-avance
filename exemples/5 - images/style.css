@@ -1,0 +1,71 @@
+body {
+    padding: 10px;
+    background: #171717;
+    color: #FFB4A2;
+    font-family: "Roboto", sans-serif;
+}
+
+#container-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px); /* Fill the page with columns of the 200px. More powerful than Flex !!! */
+    /* You can also align with Grid layouts. */
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    
+    /* You can stack backgrounds !!! */
+    /* Try to uncomment the second background, you will see ! */
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.7)
+        ),
+        /* rgba(255, 0, 0, 0.4), */
+    ;
+
+    border: 2px solid currentColor; /* Use the color of the text as border color ! */
+    border-radius: 10px;
+
+    /* Hide all the content that overflow from the parent box. */
+    overflow: hidden;
+}
+
+.card_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* Indicates at which depth you have to put the element. */
+    /* Default index is 0 */
+    /* This line put the image BEHIND the background. */
+    z-index: -2;
+
+    /* You have to change the display mode of the images. */
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    /* Indicates that the image must cover the element with a zoom at the center. */
+    /* These two lines prevent the unwanted deformations and enable us to resize the element without messing with the image. */
+    object-fit: cover;
+    object-position: center;
+}
+
+.card_title {
+    position: absolute;
+    bottom: 20px;
+
+    width: 100%;
+    text-align: center;
+}

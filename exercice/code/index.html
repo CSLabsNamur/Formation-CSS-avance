@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation CSS Avancée 2022 - Exercice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <img class="icon search" src="assets/icons/menu.svg" alt="Menu">
+        <span>My Books</span>
+        <div class="navbar_actions">
+            <img class="icon search" src="assets/icons/magnify.svg" alt="Rechercher">
+            <img class="icon account" src="assets/icons/account-circle.svg" alt="Profil Utilisateur">
+        </div>
+    </nav>
+
+    <hr>
+
+    <div class="container">
+
+        <header class="heading-menu">
+            <div class="heading-menu_left">
+                <img class="icon back" src="assets/icons/arrow-left-thick.svg" alt="Retour">
+                <span>Retour</span>
+            </div>
+            <div class="heading-menu_right">
+                <img class="icon xl download" src="assets/icons/download.svg" alt="Télécharger">
+                <img class="icon xl add" src="assets/icons/plus-circle.svg" alt="Ajouter">
+            </div>
+        </header>
+    
+        <section class="book">
+            <div class="book_heading">
+                <span class="book_title">Le livre des experts du design</span>
+                <img class="icon edit" src="assets/icons/file-document-edit.svg" alt="Éditer">
+            </div>
+            
+    
+            <aside class="book_content">
+                <img src="assets/cover.jpg" alt="Couverture du livre" class="book_cover">
+    
+                <div class="book_text">
+                    <time class="book_text_date">22 octobre 2020</time>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam blanditiis rem eligendi maiores pariatur praesentium, similique repellendus architecto sint accusantium exercitationem molestias porro cupiditate sunt doloribus deserunt eaque? Ut, qui!
+                    </p>
+                    <span class="book_text_pages">154 pages</span>
+                </div>
+            </aside>
+
+            <h2>Auteurs</h2>
+            <div class="tags">
+                <span class="tag author">Julie Passion</span>
+                <span class="tag author">John Pasteur</span>
+                <span class="tag author">Fredrik LeTest</span>
+                <img class="icon xs add-tag" src="assets/icons/plus-box.svg" alt="Ajouter un tag">
+            </div>
+
+            <h2>Catégories</h2>
+            <div class="tags">
+                <span class="tag category">Mes livres de design</span>
+                <img class="icon xs add-tag" src="assets/icons/plus-box.svg" alt="Ajouter un tag">
+            </div>
+
+            <h2>Tags</h2>
+            <div class="tags">
+                <span class="tag violet">Design</span>
+                <span class="tag purple">Apprentissage</span>
+                <span class="tag green">Experts</span>
+                <span class="tag green">Informatique</span>
+                <img class="icon xs add-tag" src="assets/icons/plus-box.svg" alt="Ajouter un tag">
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    display: inline-block;
+}
+
+.container {
+    padding: 2rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column-reverse;
+
+    min-width: 20rem;
+    max-width: 20rem;
+    aspect-ratio: 9/16;
+
+    background-color: #efefef;
+    box-shadow: .5rem .5rem 1.8 -.2rem rgba(0,0,0,0.45);
+    color: #a0a0a0;
+
+    border: .1rem solid currentColor;
+    border-radius: .4rem;
+
+    overflow: hidden;
+    user-select: none; /* The user cannot select the element */
+    /* pointer-events: none; */ /* You can complety turn off the events of the pointer. */
+}
+
+.card_content {
+    text-align: center;
+
+    padding: 1rem;
+    width: 100%;
+    height: 40%;
+
+    background-color: white;
+    border-top: .1rem solid currentColor;
+
+    font-size: 2rem;
+}
+
+.card:hover {
+    color: red;
+    background-color: red;
+}
+
+#example2 > .card:hover {
+    color: dodgerblue;
+    background-color: dodgerblue;
+}
+
+/* ------ TRANSITIONS ------ */
+
+.card.transition-1 {
+    /* Set the transition timing for ALL animateable properties */
+    transition: 1s;
+}
+
+.card.transition-2 {
+    transition: /* Set the transition timing for specific properties */
+        color .2s,
+        background-color .5s;
+}
+
+/* ------ TRANSFORMS ------ */
+
+#example2 > .card  {
+    transition: transform .2s;
+}
+
+#example2 > .card:first-child:hover {
+    /* Scale up when hovered */
+    transform: scale(1.05);
+}
+
+#example2 > .card:first-child:active {
+    /* Scale down when clicked */
+    transform: scale(0.95);
+}
+
+#example2 > .card:nth-child(2):hover {
+    /* You can apply multiple transformations !!! */
+    transform: translate(.4rem, 1rem) rotate(30deg);
+}
+
+#example2 > .card:nth-child(3):hover {
+    /* More complex animation with 3D considerations */
+    perspective: 80rem;
+    transform: rotate3d(1, 1, 1, 45deg);
+}
+
+#example3 {
+    position: relative;
+    height: 40rem;
+}
+
+#example3 > .card {
+    position: absolute;
+    top: 2rem;
+    left: 30rem;
+
+    /* OPTIONS FOR THE KEYFRAMES ANIMATION */
+    animation-name: my-animation; /* @keyframes my-animation { ... } (see bellow) */
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; /* LOOP ANIMATION */
+
+    /* You can mix animations */
+    transition: background-color .2s;
+}
+
+#example3 > .card:hover {
+    animation-play-state: paused; /* Pause the animation when hovered */
+}
+
+/* DEFINE THE KEYFRAMES ANIMATION */
+@keyframes my-animation {
+    0% {
+        left: 30rem;
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        left: 130rem;
+        transform: rotate(10deg);
+    }
+
+    100% {
+        left: 30rem;
+        transform: rotate(-10deg);
+    }
+}

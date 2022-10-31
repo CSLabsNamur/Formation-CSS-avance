@@ -1,0 +1,28 @@
+
+body {
+    padding: 40px;
+    background-color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 50px 10px;
+}
+
+h1 span {
+    text-decoration: underline;
+}
+
+h1, span {
+    color: royalblue;
+}
+
+#css {
+    font-weight: bold;
+}
+
+.title {
+    text-transform: uppercase;
+}

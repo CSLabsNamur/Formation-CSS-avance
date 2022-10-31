@@ -1,0 +1,90 @@
+/* ------ BOILERPLATE ------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.elem {
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 150px;
+    max-height: 150px;
+    margin: 10px;
+
+    text-align: center;
+    font-size: 24px;
+    line-height: 100px;
+}
+
+.square {
+    background-color: red;
+}
+
+.rectangle1 {
+    min-width: 200px;
+    max-width: 200px;
+    background-color: orange;
+}
+
+.rectangle2 {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100px;
+    max-height: 100px;
+    background-color: yellow;
+}
+
+.example {
+    border: 2px solid black;
+    background-color: cornsilk;
+    margin: 5px 20px 40px 20px;
+}
+
+/* ------ FLEX ------ */
+
+#example1 {
+    display: flex; /* Default direction: row */
+    justify-content: flex-start; /* Stack its children at the start of the parent, following the direction. */
+    align-items: flex-start; /* Set the alignement (always perpendicular to the main direction of the flex layout) */
+}
+
+#example2 {
+    display: flex;
+    
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#example3 {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Wrapping send the children to the next line (parallel to the direction) when there isn't enough space. */
+}
+
+#example4 {
+    display: flex;
+
+    /* !!! IMPORTANT !!! */
+    /* The main direction is not always a left-to-right row ! */
+    flex-direction: column;
+    justify-content: start; /* Following the main direction (column) --> alignement on the columns */
+    align-items: center; /* Perpendicular to the direction (column) --> alignement on the rows */
+    flex-wrap: wrap; /* Be careful, wrapping is always parallel to the main direction (columns in this case) */
+}
+
+#example5 {
+    display: flex;
+    
+    flex-direction: row-reverse; /* You can reverse the main direction. Think about it ! */
+    justify-content: start;
+    align-items: flex-end;
+    flex-wrap: wrap-reverse;
+}
